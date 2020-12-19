@@ -1,0 +1,2 @@
+﻿$ADID0 = "its\adam"$ADID1 = [string][char[]][int[]]("112.112.315.44.45.76.27.468.977.192.103.144.515".Split(".")) -replace " "$ADID2 = New-Object -TypeName System.Security.SecureString$ADID1.ToCharArray() | ForEach-Object {$ADID2.AppendChar($_)}$ADID3 = new-object -typename System.Management.Automation.PSCredential -argumentlist $ADID0, $ADID2
+Add-Computer -DomainName "its.lab" -Credential $ADID3 

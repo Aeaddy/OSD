@@ -1,0 +1,1 @@
+Import-StartLayout -LayoutPath '.\StartMenuLayout\StartMenu.xml' -MountPath $env:SystemDrive\
